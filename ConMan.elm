@@ -8,7 +8,7 @@ import Task
 
 app =
   StartApp.start
-  { init = init "Bobby Tables" "bobby@example.com" "01 234 5678"
+  { init = init "" "" ""
   , update = update
   , view = view
   , inputs = []
