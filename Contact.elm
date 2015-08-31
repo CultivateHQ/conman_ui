@@ -13,6 +13,10 @@ type alias Model =
   }
 
 
+init name email phone =
+  Model name email phone
+
+
 -- UPDATE
 
 type Action = NoOp
