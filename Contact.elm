@@ -3,6 +3,8 @@ module Contact where
 import Html exposing (..)
 import Html.Attributes exposing (..)
 
+import Effects
+
 
 -- MODEL
 
@@ -14,7 +16,8 @@ type alias Model =
 
 
 init name email phone =
-  Model name email phone
+  ( Model name email phone
+  , Effects.none)
 
 
 -- UPDATE
@@ -23,12 +26,12 @@ type Action = NoOp
 
 update action model =
   case action of
-    NoOp -> model
+    NoOp -> (model, Effects.none)
 
 
 -- VIEW
 
-view contact =
+view address contact =
   div [ class "contact" ]
   [ h2 [ class "contact__name" ] [ text contact.name ]
   , div [ class "contact__email" ]
