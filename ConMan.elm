@@ -1,6 +1,7 @@
 module ConMan where
 
-import Html
+import Html exposing (..)
+import Html.Attributes exposing (..)
 
 
 main =
@@ -10,4 +11,4 @@ main =
 -- VIEW
 
 view =
-  Html.text "ConMan is in a View!"
+  text "ConMan is in a View!"
