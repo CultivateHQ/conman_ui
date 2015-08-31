@@ -13,6 +13,15 @@ type alias Model =
   }
 
 
+-- UPDATE
+
+type Action = NoOp
+
+update action model =
+  case action of
+    NoOp -> model
+
+
 -- VIEW
 
 view contact =
