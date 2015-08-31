@@ -4,4 +4,10 @@ import Html
 
 
 main =
-  Html.text "ConMan is alive!"
+  view
+
+
+-- VIEW
+
+view =
+  Html.text "ConMan is in a View!"
